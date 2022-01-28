@@ -8,37 +8,20 @@ body {
   background-color: #3a4764;
 }
 
-img {
-  max-width: 100%;
-  height: auto;
-}
-
 h1 {
   font-size: 1.5rem;
-}
-
-h2 {
-  font-size: 2rem;
 }
 
 h3 {
   font-size: 1rem;
 }
 
-//h4 {}
-
-//h5 {}
-
-//h6 {}
-
-//p {}
-
-iframe {
-  display: block;
-}
-
 .fw-medium {
   font-weight: 500;
+}
+
+.rounded {
+  border-radius: 12px !important;
 }
 
 .btn-circle.btn-xl {
@@ -67,7 +50,7 @@ iframe {
 }
 
 // font size
-@for $i from 10 through 30 {
+@for $i from 10 through 40 {
   .font-#{$i} {
     font-size: #{$i}px;
   }

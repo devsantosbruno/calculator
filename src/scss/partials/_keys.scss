@@ -1,0 +1,34 @@
+.buttonLight {
+  border-width: 0 0 5px 0 !important;
+  border-color: $grayish !important;
+}
+
+.buttonBlue {
+  border-width: 0 0 5px 0 !important;
+  border-color: $keyBlue !important;
+}
+
+.buttonRed {
+  border-width: 0 0 5px 0 !important;
+  border-color: $dangerDark !important;
+}
+
+input {
+  &::-webkit-outer-spin-button,
+  &::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+  }
+
+  /* Firefox */
+  &[type='number'] {
+    -moz-appearance: textfield;
+  }
+
+  &:focus-visible {
+    outline: none;
+  }
+  &::placeholder {
+    color: $white;
+  }
+}

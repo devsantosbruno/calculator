@@ -5703,6 +5703,15 @@ __webpack_require__(/*! bootstrap */ "./node_modules/bootstrap/dist/js/bootstrap
 
 __webpack_require__(/*! @fortawesome/fontawesome-free */ "./node_modules/@fortawesome/fontawesome-free/js/fontawesome.js");
 
+$('#reset').click(function () {
+  $('#valueCalc').val(' ');
+  console.clear();
+});
+$('.number').click(function calcular() {
+  $('#valueCalc').val(Number($(this).text()) + calcular());
+  console.log(Number($(this).text()));
+});
+
 /***/ }),
 
 /***/ "./node_modules/bootstrap/dist/js/bootstrap.esm.js":
