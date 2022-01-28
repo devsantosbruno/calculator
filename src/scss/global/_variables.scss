@@ -3,7 +3,7 @@ $sm: 540px;
 $md: 720px;
 $lg: 960px;
 $xl: 1140px;
-$xxl: 1640px;
+$xxl: 1440px;
 
 /*containers size*/
 $container-max-widths: (
@@ -26,15 +26,38 @@ $grid-breakpoints: (
 /*fonts*/
 
 /*colors*/
-/*
+
+// backgrounds
+
+// theme 1
+$primaryA: #232c43;
+$screenA: #182034;
+
+// keys
+
+// theme 1
+$keyBlue: #404e72;
+$keyBlueLight: #637097;
+$danger: #d03f2f;
+$dangerDark: #93261a;
+$light: #eae3dc;
+$grayish: #b4a597;
+
+// texts
+
+// theme 1
+$textA: #444b5a;
+// $warning: #ffe53d;
+
 $theme-colors: (
-        "primary":    $primary,
-        "secondary":  $secondary,
-        "success":    $success,
-        "info":       $info,
-        "warning":    $warning,
-        "danger":     $danger,
-        "light":      $light,
-        "dark":       $dark
+  'primaryA': $primaryA,
+  'screenA': $screenA,
+  'keyBlue': $keyBlue,
+  'keyBlueLight': $keyBlueLight,
+  'danger': $danger,
+  'dangerDark': $dangerDark,
+  'light': $light,
+  'grayish': $grayish,
+  'textA': $textA,
+  // 'warning': $warning
 );
-*/
