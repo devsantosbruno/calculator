@@ -22,8 +22,8 @@
         <div class="mb-4 text-end bg-screenA rounded p-4">
           <form action="POST">
             <input
-              class="bg-transparent text-white text-end font-36 border-0"
-              type="number"
+              class="bg-transparent text-white text-end font-36 border-0 w-100"
+              type="text"
               placeholder="0"
               name="calc"
               id="valueCalc"
@@ -59,6 +59,7 @@
           <div class="col-3">
             <button
               type="button"
+              id="del"
               class="bg-keyBlueLight buttonBlue rounded text-light p-4 w-100 h-100 rounded font-32"
             >
               DEL
@@ -92,7 +93,7 @@
           <div class="col-3">
             <button
               type="button"
-              class="bg-light buttonLight rounded text-keyBlue p-4 w-100 h-100 rounded font-32"
+              class="bg-light buttonLight rounded text-keyBlue p-4 w-100 h-100 rounded font-32 operator"
             >
               +
             </button>
@@ -124,7 +125,7 @@
           <div class="col-3">
             <button
               type="button"
-              class="bg-light buttonLight rounded text-keyBlue p-4 w-100 h-100 rounded font-32"
+              class="bg-light buttonLight rounded text-keyBlue p-4 w-100 h-100 rounded font-32 operator"
             >
               -
             </button>
@@ -133,7 +134,7 @@
           <div class="col-3">
             <button
               type="button"
-              class="bg-light buttonLight rounded text-keyBlue p-4 w-100 h-100 rounded font-32"
+              class="bg-light buttonLight rounded text-keyBlue p-4 w-100 h-100 rounded font-32 operator"
             >
               .
             </button>
@@ -149,7 +150,7 @@
           <div class="col-3">
             <button
               type="button"
-              class="bg-light buttonLight rounded text-keyBlue p-4 w-100 h-100 rounded font-32"
+              class="bg-light buttonLight rounded text-keyBlue p-4 w-100 h-100 rounded font-32 operator"
             >
               /
             </button>
@@ -157,7 +158,7 @@
           <div class="col-3">
             <button
               type="button"
-              class="bg-light buttonLight rounded text-keyBlue p-4 w-100 h-100 rounded font-32"
+              class="bg-light buttonLight rounded text-keyBlue p-4 w-100 h-100 rounded font-32 operator"
             >
               X
             </button>
@@ -175,6 +176,7 @@
           <div class="col-6">
             <button
               type="button"
+              id="result"
               class="bg-danger buttonRed rounded text-light p-4 w-100 h-100 rounded font-32"
             >
               =

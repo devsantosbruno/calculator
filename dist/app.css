@@ -11399,9 +11399,19 @@ body {
 h1, .h1 {
   font-size: 1.5rem;
 }
+@media (max-width: 539.98px) {
+  h1, .h1 {
+    font-size: 0.5rem;
+  }
+}
 
 h3, .h3 {
   font-size: 1rem;
+}
+@media (max-width: 539.98px) {
+  h3, .h3 {
+    font-size: 0.25rem;
+  }
 }
 
 .fw-medium {
