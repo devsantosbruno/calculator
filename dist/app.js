@@ -5701,10 +5701,36 @@ __webpack_require__(/*! jquery */ "./node_modules/jquery/src/jquery.js");
 
 __webpack_require__(/*! bootstrap */ "./node_modules/bootstrap/dist/js/bootstrap.esm.js");
 
-__webpack_require__(/*! @fortawesome/fontawesome-free */ "./node_modules/@fortawesome/fontawesome-free/js/fontawesome.js"); // src/app.js
+__webpack_require__(/*! @fortawesome/fontawesome-free */ "./node_modules/@fortawesome/fontawesome-free/js/fontawesome.js");
 
-
-alert('js rodando');
+$('#reset').click(function () {
+  $('#valueCalc').val(' ');
+  console.clear();
+});
+$('.number').click(function () {
+  var numberClicked = Number($(this).text());
+  $('#valueCalc').val($('#valueCalc').val() + numberClicked);
+});
+$('.operator').click(function () {
+  if ($(this).html().indexOf('+') != -1) {
+    $('#valueCalc').val($('#valueCalc').val() + '+');
+  } else if ($(this).html().indexOf('-') != -1) {
+    $('#valueCalc').val($('#valueCalc').val() + '-');
+  } else if ($(this).html().indexOf('X') != -1) {
+    $('#valueCalc').val($('#valueCalc').val() + '*');
+  } else if ($(this).html().indexOf('/') != -1) {
+    $('#valueCalc').val($('#valueCalc').val() + '/');
+  } else if ($(this).html().indexOf('.') != -1) {
+    $('#valueCalc').val($('#valueCalc').val() + '.');
+  }
+});
+$('#result').click(function () {
+  $('#valueCalc').val(eval($('#valueCalc').val()));
+});
+$('#del').click(function () {
+  var delet = $('#valueCalc').val().slice(0, -1);
+  console.log($('#valueCalc').val(delet));
+});
 
 /***/ }),
 
